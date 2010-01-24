@@ -1,3 +1,5 @@
+#!/usr/bin/env ruby
+#
 # ICpenses. Parses ICporter-style JSON files, exported from your bank, and provides expense analysis.
 # By Henrik Nyh <http://henrik.nyh.se> 2010-01-24 under the MIT license.
 
