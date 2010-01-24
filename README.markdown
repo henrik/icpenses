@@ -55,7 +55,7 @@ This is a rough proof-of-concept. Some things I may do:
 
  * Add more statistics
  * HTML format with graphs
- * Put cluster definitions in separate files so you can customize and share.
+ * Put cluster definitions in separate files so you can customize and share
  * Fix multibyte chars messing up the column alignment
  * Tidywork
 
