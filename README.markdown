@@ -9,14 +9,14 @@ Feel free to write your own ICporter-compatible exporters or analyzers.
 
 Provide the file to analyze as a command-line argument.
 
-    ruby icpenses.rb ~/Documents/icpenses/data/2010-01_1234-123_456_7.json
+    ./icpenses.rb ~/Documents/icpenses/data/2010-01_1234-123_456_7.json
 
 Writes some stats to STDOUT.
 
 
 ## Example output
 
-    $ ruby icpenses.rb example.json
+    $ ./icpenses.rb example.json
     == ICpenses
 
        Account: 1234-567 890 1 (MasterCard)
