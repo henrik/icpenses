@@ -1,26 +1,5 @@
 # ICpenses. Parses ICporter-style JSON files, exported from your bank, and provides expense analysis.
 # By Henrik Nyh <http://henrik.nyh.se> 2010-01-24 under the MIT license.
-#
-# Feel free to write your own ICporter-compatible exporters or analyzers.
-#
-#
-# USAGE
-#
-# Provide the file to analyze as a command-line argument.
-#
-#   ruby icpenses.rb ~/Documents/icpenses/data/2010-01_1234-123_456_7.json
-#
-# Writes some stats to STDOUT.
-#
-#
-# TODO
-#
-# Very much a work in progress. Will probably add:
-#  * More stats
-#  * HTML format with graphs
-#  * Cluster definitions in separate files so you can customize and share
-#  * Fix multibyte chars messing up the column alignment
-#  * Cleanup
 
 require "rubygems"
 require "json"
