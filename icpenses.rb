@@ -1,10 +1,9 @@
 #!/usr/bin/env ruby
 #
-# ICpenses. Parses ICporter-style JSON files, exported from your bank, and provides expense analysis.
+# ICpenses. Parses ICporter-style YAML files, exported from your bank, and provides expense analysis.
 # By Henrik Nyh <http://henrik.nyh.se> 2010-01-24 under the MIT license.
 
-require "rubygems"
-require "json"
+require "yaml"
 
 class Array
   def sum
@@ -21,7 +20,7 @@ CLUSTERS = {
 DEFAULT_CLUSTER = 'Other'
 
 
-data = JSON.parse(ARGF.read)
+data = YAML.load(ARGF.read)
 account = data['account']
 transactions = data['transactions']
 
@@ -51,9 +50,9 @@ def group(transactions, label, all=false, &block)
   transactions.each do |group, ts|
     amount = ts.map {|t| -t['amount'] }.sum
     count  = ts.length
-    name = label=="All" ? group['details'] : group
+    name = label=="All" ? group['details'] : group.to_s
     text = "#{name.ljust(25)} #{format("%.2f", amount).rjust(10)}"
-    text += "  " + (label=="All" ? "#{group['date']}" : "(#{count})")
+    text += "  " + (label=="All" ? group['date'].to_s : "(#{count})")
     puts " * #{text}"
   end
   puts

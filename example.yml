@@ -1,0 +1,23 @@
+---
+account:
+  name:   Betalkort
+  number: 1234-567 890 1
+from: 2010-01-01
+to:   2010-01-31
+transactions:
+- date:         2009-01-01
+  details:      Someone
+  amount:       -1000.5
+  direct_debit: false
+- date:         2009-01-01
+  details:      ICA
+  amount:       -200.1
+  direct_debit: false
+- date:         2009-01-02
+  details:      Coop
+  amount:       -300.1
+  direct_debit: false
+- date:         2009-01-04
+  details:      ICA
+  amount:       -800.0
+  direct_debit: false

@@ -1,6 +1,6 @@
 # ICpenses
 
-Parses [ICporter](http://github.com/henrik/icporter)-style JSON files, exported from your bank, and provides simple expense analysis.
+Parses [ICporter](http://github.com/henrik/icporter)-style YAML files, exported from your bank, and provides simple expense analysis.
 
 Feel free to write your own ICporter-compatible exporters or analyzers.
 
@@ -9,14 +9,14 @@ Feel free to write your own ICporter-compatible exporters or analyzers.
 
 Provide the file to analyze as a command-line argument.
 
-    ./icpenses.rb ~/Documents/icpenses/data/2010-01_1234-123_456_7.json
+    ./icpenses.rb ~/Documents/icpenses/data/2010-01_1234-123_456_7.yml
 
 Writes some stats to STDOUT.
 
 
 ## Example output
 
-    $ ./icpenses.rb example.json
+    $ ./icpenses.rb example.yml
     == ICpenses
 
        Account: 1234-567 890 1 (MasterCard)
