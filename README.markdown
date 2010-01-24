@@ -1,6 +1,6 @@
 # ICpenses
 
-Parses [ICporter](http://github.com/henrik/icporter)-style JSON files, exported from your bank, and provides expense analysis.
+Parses [ICporter](http://github.com/henrik/icporter)-style JSON files, exported from your bank, and provides simple expense analysis.
 
 Feel free to write your own ICporter-compatible exporters or analyzers.
 
